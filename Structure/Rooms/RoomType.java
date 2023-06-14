@@ -1,4 +1,4 @@
-package Structure;
+package Structure.Rooms;
 
 public abstract class RoomType {
 
