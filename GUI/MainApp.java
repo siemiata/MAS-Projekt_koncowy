@@ -1,11 +1,17 @@
 package GUI;
 
+import Structure.Rooms.Room;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
 
 public class MainApp {
     public static void main(String[] args) {
@@ -20,8 +26,7 @@ public class MainApp {
             JButton browseRoomsButton = new JButton("Przeglądaj pokoje");
             browseRoomsButton.addActionListener(e -> {
                 JFrame browseRoomsFrame = new JFrame("Przeglądaj pokoje");
-                browseRoomsFrame.setSize(300, 200);
-                browseRoomsFrame.setVisible(true);
+                new HotelApp();
             });
             mainPanel.add(browseRoomsButton);
 
@@ -222,6 +227,11 @@ class NewRoomCreatorFrame extends JFrame {
             System.out.println("Mała rodzina: " + smallFamilyCheckBox.isSelected());
             System.out.println("Dodatkowe informacje: " + additionalInfo);
 
+            String roomString = roomId + ";" + roomName + ";" + maxPeople + ";" + roomStandard + ";" + standardCheckBox.isSelected() + ";" + specialCheckBox.isSelected() + ";" + largeFamilyCheckBox.isSelected() + ";" + smallFamilyCheckBox.isSelected() + ";" + additionalInfo;
+
+            Methods methods = new Methods();
+            methods.saveRoom("Data/Rooms.txt", roomString);
+
             JOptionPane.showMessageDialog(this, "Zapisano nowy pokój", "Sukces", JOptionPane.INFORMATION_MESSAGE);
         });
     }
@@ -271,5 +281,6 @@ class DeleteRoom extends JFrame {
     }
 
 }
+
 
 
