@@ -14,7 +14,7 @@ public class NewRoom{
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setSize(300, 200);
 
-            JPanel panel = new JPanel(new GridLayout(5, 2));
+            JPanel panel = new JPanel(new GridLayout(6, 2));
 
             JLabel roomIdLabel = new JLabel("ID pokoju:");
             JTextField roomIdField = new JTextField();
@@ -37,6 +37,9 @@ public class NewRoom{
             panel.add(standardField);
 
             JButton saveButton = new JButton("Zapisz");
+            JButton exitButton = new JButton("Wyjście");
+            exitButton.addActionListener(e -> frame.dispose());
+            panel.add(exitButton);
             saveButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -49,6 +52,7 @@ public class NewRoom{
                     System.out.println("Nazwa: " + name);
                     System.out.println("Max ilość osób: " + maxPeople);
                     System.out.println("Standard: " + standard);
+                    JOptionPane.showMessageDialog(frame, "Poprawnie dodano pokój", "Sukces !", JOptionPane.OK_OPTION);
                 }
             });
 
