@@ -41,6 +41,21 @@ public class Room {
         this.keeper = keeper;
     }
 
+    public int getRoomID() {
+        return roomID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getMaxPeople() {
+        return maxPeople;
+    }
+
+    public int getStandard() {
+        return standard;
+    }
 
     public void addBathroom(Bathroom bathroom)throws Exception{
         if(!bathrooms.contains(bathroom)){

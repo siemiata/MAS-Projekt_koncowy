@@ -1,11 +1,9 @@
 package AppGui;
 
-import Data.DataLoader;
 import Structure.Association.Reservation;
 
 import javax.swing.*;
 import java.awt.*;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 

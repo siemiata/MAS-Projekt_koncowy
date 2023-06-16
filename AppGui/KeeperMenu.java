@@ -46,7 +46,8 @@ public class KeeperMenu {
     }
 
     private static void lookRoom(){
-
+        LookUpRooms lookUpRooms = new LookUpRooms();
+        lookUpRooms.createFrame();
     }
     private static void insertRepair(){
         NewRepair newRepair = new NewRepair();
