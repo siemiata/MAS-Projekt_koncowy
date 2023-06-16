@@ -1,0 +1,2 @@
+Adam;Wadek;00222104634;3;90;opiekun1;opk1
+Robert;Loczek;01234654324;7;54;opiekun2;opk2

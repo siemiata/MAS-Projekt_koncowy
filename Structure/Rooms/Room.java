@@ -22,6 +22,12 @@ public class Room {
     private ArrayList<Repair> repairs;
     private Keeper keeper;
 
+    public Room(int roomID, String name, int maxPeople, int standard) {
+        this.roomID = roomID;
+        this.name = name;
+        this.maxPeople = maxPeople;
+        this.standard = standard;
+    }
 
     public Room(int roomID, String name, int maxPeople, int standard, RoomType roomType, FamilySize familySize, Keeper keeper) {
         this.roomID = roomID;
@@ -34,6 +40,7 @@ public class Room {
         this.repairs = new ArrayList<>();
         this.keeper = keeper;
     }
+
 
     public void addBathroom(Bathroom bathroom)throws Exception{
         if(!bathrooms.contains(bathroom)){

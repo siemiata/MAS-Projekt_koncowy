@@ -18,4 +18,5 @@ public class Keeper extends Person{
         this.repairs = new ArrayList<>();
         this.rooms = new ArrayList<>();
     }
+
 }

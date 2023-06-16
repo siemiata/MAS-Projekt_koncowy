@@ -86,7 +86,6 @@ class CaretakerModeFrame extends JFrame {
 
         JLabel passwordLabel = new JLabel("Hasło:");
         credentialsPanel.add(passwordLabel);
-
         JPasswordField passwordField = new JPasswordField();
         credentialsPanel.add(passwordField);
 
@@ -148,11 +147,11 @@ class NewRoomCreatorFrame extends JFrame {
     private JTextField roomNameField;
     private JTextField maxPeopleField;
     private JTextField roomStandardField;
-    private JCheckBox standardCheckBox;
-    private JCheckBox specialCheckBox;
-    private JCheckBox largeFamilyCheckBox;
+    private static JCheckBox standardCheckBox;
+    private static JCheckBox specialCheckBox;
+    private static JCheckBox largeFamilyCheckBox;
     private JCheckBox smallFamilyCheckBox;
-    private JTextField additionalInfoField;
+    private static JTextField additionalInfoField;
 
     public NewRoomCreatorFrame() {
         setTitle("Kreator nowego pokoju");
@@ -236,7 +235,7 @@ class NewRoomCreatorFrame extends JFrame {
         });
     }
 
-    private class CheckBoxListener implements ItemListener {
+    public static class CheckBoxListener implements ItemListener {
         @Override
         public void itemStateChanged(ItemEvent e) {
             if (standardCheckBox.isSelected() || specialCheckBox.isSelected() || largeFamilyCheckBox.isSelected()) {
