@@ -1,6 +1,6 @@
 package AppGui;
 
-import GUI.Methods;
+
 
 import javax.swing.*;
 import java.awt.*;

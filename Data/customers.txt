@@ -1,0 +1,2 @@
+1;Jaroslaw;Kaczka;0023476143;34244233;klient1;klt1
+2;Witold;Ges;932347614;30942333;klient2;klt2

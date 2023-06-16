@@ -41,13 +41,16 @@ public class KeeperMenu {
     }
 
     private static void deleteRoom() {
-        // Implementacja metody deleteRoom()
+        DeleteRoom deleteRoom =new DeleteRoom();
+        deleteRoom.deleteR();
     }
 
     private static void lookRoom(){
 
     }
     private static void insertRepair(){
+        NewRepair newRepair = new NewRepair();
+        newRepair.newRep();
 
     }
 }

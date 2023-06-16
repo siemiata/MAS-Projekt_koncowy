@@ -15,7 +15,7 @@ public class LaunchAppClass {
     private static void createAndShowGUI() {
         JFrame frame = new JFrame("Zielony Zakątek");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(300, 200);
+        frame.setSize(340, 400);
         frame.setLayout(new GridLayout(3, 1));
 
         JButton opiekunButton = new JButton("OPIEKUN");
@@ -30,9 +30,10 @@ public class LaunchAppClass {
         klientButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                customerLogin();
+                customerLogin(frame);
             }
         });
+
 
         JButton wyjscieButton = new JButton("WYJŚCIE");
         wyjscieButton.addActionListener(new ActionListener() {
@@ -55,8 +56,9 @@ public class LaunchAppClass {
         keeperLogin.showKeeperLoginDialog(parentFrame);
     }
 
-    private static void customerLogin() {
+    private static void customerLogin(JFrame parentFrame) {
         System.out.println("Uruchomiono metodę customerLogin()");
-        // Tutaj dodaj logikę dla logowania klienta
+        CustomerChoose customerChoose = new CustomerChoose();
+        customerChoose.createCustomerWindow();
     }
 }
