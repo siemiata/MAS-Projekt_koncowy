@@ -11,7 +11,7 @@ import java.util.List;
 
 public class Reservation {
     private int reservationID;
-    private Date reservationDate;
+    private String reservationDate;
     private int daysCount;
     private String nickname;
     private ReservationStatus reservationStatus;
@@ -19,14 +19,14 @@ public class Reservation {
     private Customer customer;
     private Room room;
 
-    public Reservation(int reservationID, Date reservationDate, int daysCount, String nickname){
+    public Reservation(int reservationID, String reservationDate, int daysCount, String nickname){
         this.reservationID = reservationID;
         this.reservationDate = reservationDate;
         this.daysCount = daysCount;
         this.nickname = nickname;
     }
 
-    public Reservation(int reservationID, Date reservationDate, int daysCount, ReservationStatus reservationStatus, Customer customer, Room room) {
+    public Reservation(int reservationID, String reservationDate, int daysCount, ReservationStatus reservationStatus, Customer customer, Room room) {
         this.reservationID = reservationID;
         this.reservationDate = reservationDate;
         this.daysCount = daysCount;
@@ -39,7 +39,7 @@ public class Reservation {
         return reservationID;
     }
 
-    public Date getReservationDate() {
+    public String getReservationDate() {
         return reservationDate;
     }
 

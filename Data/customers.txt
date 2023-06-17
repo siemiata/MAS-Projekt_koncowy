@@ -1,2 +1,5 @@
-1;Jaroslaw;Kaczka;0023476143;34244233;klient1;klt1
-2;Witold;Ges;932347614;30942333;klient2;klt2
+0;Jaroslaw;Kaczka;23476143;34244233;klient1;klt1
+1;Witold;Ges;932347614;30942333;klient2;klt2
+2;Aleksander;Siemiatkowski;23123123;4342342;alek;lol
+3;Alek;Siemiat;222104;213213;alo;malo
+4;Aleksander;Siemiatkowski;222104274;234765;aleksandrowski;trudneHaslo

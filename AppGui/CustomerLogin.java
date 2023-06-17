@@ -10,6 +10,8 @@ import java.io.IOException;
 
 public class CustomerLogin {
 
+    public static String loggedUser = null;
+
     public static void showCustomerLoginDialog(JFrame parentFrame) {
         JDialog loginDialog = new JDialog(parentFrame, "Logowanie Klienta", true);
         loginDialog.setSize(500, 400);
@@ -32,6 +34,7 @@ public class CustomerLogin {
                     System.out.println("Zalogowano");
                     CustomerMenu customerMenu = new CustomerMenu();
                     customerMenu.createCustomerWindow();
+                    loggedUser = username;
                     loginDialog.dispose();
                 }
                 else{

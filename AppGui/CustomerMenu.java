@@ -34,11 +34,13 @@ public class CustomerMenu {
         frame.setVisible(true);
     }
     private static void lookRoom() {
-
+        ReservationPanel reservationPanel = new ReservationPanel();
+        reservationPanel.createFramePanel();
     }
 
     private static void myReservation() {
-
+        CustomerReservationMenu customerReservationMenu = new CustomerReservationMenu();
+        customerReservationMenu.createFrame();
     }
 
 }

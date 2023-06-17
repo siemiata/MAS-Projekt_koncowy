@@ -39,25 +39,21 @@ public class LookUpRooms {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(600, 400);
 
-        // Tworzymy model tabeli
+
         DefaultTableModel model = new DefaultTableModel();
         model.addColumn("ID Pokoju");
         model.addColumn("Nazwa");
         model.addColumn("Maksymalna liczba osób");
         model.addColumn("Standard");
 
-        // Wypełniamy model danymi z listy
         for (Room room : roomsList) {
             model.addRow(new Object[]{room.getRoomID(), room.getName(), room.getMaxPeople(), room.getStandard()});
         }
 
-        // Tworzymy tabelę i dodajemy do niej model
         JTable table = new JTable(model);
 
-        // Dodajemy tabelę do ramki
         frame.add(new JScrollPane(table), BorderLayout.CENTER);
 
-        // Wyświetlamy ramkę
         frame.setVisible(true);
     }
 

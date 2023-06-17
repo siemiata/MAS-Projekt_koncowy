@@ -11,5 +11,15 @@ public abstract class Person {
         this.pesel = pesel;
     }
 
+    public String getPersonName() {
+        return personName;
+    }
 
+    public String getPersonSurname() {
+        return personSurname;
+    }
+
+    public int getPesel() {
+        return pesel;
+    }
 }
