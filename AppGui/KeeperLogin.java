@@ -12,7 +12,7 @@ public class KeeperLogin {
 
     public static void showKeeperLoginDialog(JFrame parentFrame) {
         JDialog loginDialog = new JDialog(parentFrame, "Logowanie opiekuna", true);
-        loginDialog.setSize(300, 200);
+        loginDialog.setSize(500, 400);
         loginDialog.setLayout(new GridLayout(3, 2));
 
         JLabel usernameLabel = new JLabel("Nazwa użytkownika:");

@@ -15,7 +15,7 @@ public class LaunchAppClass {
     private static void createAndShowGUI() {
         JFrame frame = new JFrame("Zielony Zakątek");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(340, 400);
+        frame.setSize(500, 400);
         frame.setLayout(new GridLayout(3, 1));
 
         JButton opiekunButton = new JButton("OPIEKUN");

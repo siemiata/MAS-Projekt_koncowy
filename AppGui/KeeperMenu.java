@@ -7,6 +7,7 @@ public class KeeperMenu {
     public static void createWindow() {
         JFrame frame = new JFrame("Zarządzanie pokojami");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(500,400);
 
         JPanel panel = new JPanel(new GridLayout(5, 1));
 
